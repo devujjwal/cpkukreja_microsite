@@ -26,19 +26,19 @@
   -ms-user-select: none;
   user-select: none; }
   .btn.btn-primary {
-    background: #fdc900;
-    border: 3px solid #fdc900;
+    background: #da2337;
+    border: 3px solid #da2337;
     color: #000000;
     font-weight: 700; }
     .btn.btn-primary:hover {
       background: transparent; }
   .btn.btn-primary-outline {
     background: transparent;
-    border: 3px solid #fdc900;
-    color: #fdc900;
+    border: 3px solid #da2337;
+    color: #da2337;
     font-weight: 700; }
     .btn.btn-primary-outline:hover {
-      background: #fdc900;
+      background: #da2337;
       color: #000000; }
 
 section.container {
@@ -200,7 +200,7 @@ section .card {
       width: 60px;
       position: absolute;
       height: 4px;
-      background: #fdc900;
+      background: #da2337;
       bottom: -10px;
       left: 0;
       padding: 0; }
@@ -228,7 +228,7 @@ section .more-link {
     position: absolute;
     font-size: inherit;
     padding-left: 5px;
-    color: #fdc900;
+    color: #da2337;
     font-style: normal;
     font-weight: 700; }
   section .more-link:hover .arrow {
@@ -249,7 +249,7 @@ section .read-more {
     position: absolute;
     font-size: inherit;
     padding-left: 5px;
-    color: #fdc900;
+    color: #da2337;
     font-style: normal;
     font-weight: 700; }
   section .read-more:hover .arrow {
@@ -277,7 +277,7 @@ section.video-section .right-sec .desc .title {
   section.video-section .right-sec .desc .title:after {
     content: '';
     width: 60px;
-    background: #fdc900;
+    background: #da2337;
     position: absolute;
     height: 4px;
     bottom: 0px;
@@ -336,7 +336,7 @@ section #testimonials {
       content: '\f103';
       font-family: 'ETicon';
       font-size: 40px;
-      color: #fdc900;
+      color: #da2337;
       position: absolute;
       top: 0;
       left: 10%; }
@@ -365,7 +365,7 @@ section #testimonials {
           font-weight: 700; }
         section #testimonials .testimonial-widget .client .client-desc .desg {
           font-weight: 500;
-          color: #fdc900;
+          color: #da2337;
           padding-top: 5px; }
 
 section #clients {
@@ -385,7 +385,7 @@ section #clients {
 
 section .contact-wrapper {
   width: 100%;
-  border: 6px solid #fdc900;
+  border: 6px solid #da2337;
   padding: 30px; }
   section .contact-wrapper h2 {
     font-size: 24px;
@@ -516,7 +516,7 @@ section#about {
   section#about .right-sec .title {
     font-size: 22px;
     font-weight: 700;
-    color: #fdc900;
+    color: #da2337;
     margin: 20px 0;
     padding: 0;
     text-align: left; }
@@ -580,7 +580,7 @@ section #key-people {
     section #key-people .people .desg {
       font-size: 16px;
       font-weight: 500;
-      color: #fdc900; }
+      color: #da2337; }
 
 section .products {
   list-style: none; }
@@ -689,9 +689,9 @@ section #p-detail {
   display: -webkit-flex;
   display: flex;
   padding: 20px 90px 15px;
-  color: white;
-  background: #000000;
-  font-size: 17px; }
+  color: #000000;
+  font-size: 17px;
+  border-bottom: 3px solid #da2337; }
   #header .navbar .navbar__link-brand {
     display: inherit; }
     #header .navbar .navbar__link-brand img {
@@ -713,17 +713,63 @@ section #p-detail {
       position: relative;
       text-decoration: none;
       cursor: pointer;
-      color: #ffffff; }
-      #header .navbar .navbar__items .navbar__link.active:after, #header .navbar .navbar__items .navbar__link:hover:after {
-        content: '';
-        position: absolute;
-        background: #fdc900;
-        height: 5px;
-        left: 0;
-        right: 0;
-        top: 42px; }
+      color: #000000; }
+      #header .navbar .navbar__items .navbar__link.active, #header .navbar .navbar__items .navbar__link:hover {
+        color: #da2337; }
+        #header .navbar .navbar__items .navbar__link.active:after, #header .navbar .navbar__items .navbar__link:hover:after {
+          content: '';
+          position: absolute;
+          /*background: $primary-color;
+                        height: 5px;
+                        left: 0;
+                        right: 0;
+                        top: 42px;*/
+          border-left: 9px solid transparent;
+          border-right: 9px solid transparent;
+          border-bottom: 10px solid #da2337;
+          left: 40%;
+          bottom: -35px; }
     #header .navbar .navbar__items.navbar__items--right {
       margin-left: auto; }
+      #header .navbar .navbar__items.navbar__items--right .Rectangle {
+        width: 205px;
+        height: 60px;
+        border-radius: 30.5px;
+        border: solid 1px #ededed;
+        position: relative; }
+        #header .navbar .navbar__items.navbar__items--right .Rectangle .call-icon {
+          color: #da2337;
+          text-align: center;
+          position: absolute;
+          top: 16px;
+          left: 16px;
+          font-size: 22px; }
+        #header .navbar .navbar__items.navbar__items--right .Rectangle .call {
+          position: absolute;
+          top: 13px;
+          left: 45px;
+          font-size: 13px;
+          font-weight: 600;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000;
+          font-family: Montserrat; }
+        #header .navbar .navbar__items.navbar__items--right .Rectangle span.cp-email {
+          position: absolute;
+          left: 56px;
+          top: 30px;
+          font-family: Montserrat;
+          font-size: 13px;
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000; }
   #header .navbar .navbar__link-toggle {
     display: none; }
 
@@ -761,7 +807,6 @@ section #p-detail {
     top: 50%;
     width: 36px;
     height: 36px;
-    border: 2px solid #ffffff;
     cursor: pointer;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -773,10 +818,10 @@ section #p-detail {
     #header .sliders .slide-nav.prev {
       right: 5%; }
     #header .sliders .slide-nav i {
-      font-size: 18px;
+      font-size: 35px;
       color: #ffffff;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 800;
       line-height: 33px;
       padding: 0 7px; }
 
@@ -796,7 +841,7 @@ section #p-detail {
   #header .header-band .title {
     font-size: 36px;
     color: #000000;
-    border-right: 2px solid #fdc900;
+    border-right: 2px solid #da2337;
     padding: 10px 20px;
     padding-left: 0;
     -webkit-box-flex: 1 1 20%;
@@ -807,7 +852,7 @@ section #p-detail {
     flex: 1 1 20%; }
     #header .header-band .title strong {
       font-size: inherit;
-      color: #fdc900; }
+      color: #da2337; }
   #header .header-band .desc {
     font-size: 18px;
     line-height: 1.39;
@@ -849,7 +894,7 @@ section #p-detail {
     position: absolute;
     bottom: 0;
     left: 50%;
-    background: #fdc900;
+    background: #da2337;
     list-style: none;
     padding: 10px;
     z-index: 2;
@@ -949,7 +994,7 @@ section #p-detail {
       content: '\f103';
       font-family: 'ETicon';
       font-size: 40px;
-      color: #fdc900;
+      color: #da2337;
       position: absolute;
       top: 0;
       left: 10%; }
@@ -966,7 +1011,7 @@ section #p-detail {
     section #testimonials .testimonial-widget .client .client-desc .desg {
       font-size: 14px; }
   section .contact-wrapper {
-    border: 2px solid #fdc900;
+    border: 2px solid #da2337;
     padding: 15px; }
     section .contact-wrapper h2 {
       font-size: 20px; }
@@ -1112,11 +1157,25 @@ section #p-detail {
     left: 50%;
     transform: translate(-50%, -10%);
     width: 70%;
-    text-align: center; }
-    #header .sliders .slide .slide-desc h2 {
-      font-size: 24px; }
-    #header .sliders .slide .slide-desc p {
-      font-size: 14px; }
+    text-align: center;
+    width: 391px;
+    opacity: 0.8;
+    background-color: #463a26; }
+  #header .sliders .slide .form-elements {
+    padding: 10px;
+    color: #ffffff; }
+    #header .sliders .slide .form-elements label {
+      display: block;
+      max-width: 127px;
+      float: left;
+      width: 120px;
+      line-height: 60px; }
+    #header .sliders .slide .form-elements .form-control {
+      background: #ffffff;
+      width: 65%;
+      border-radius: 2px;
+      margin: 11px 0px;
+      padding: 10px 6px; }
   #header .sliders .slide-nav {
     width: 30px;
     height: 30px; }
@@ -1145,7 +1204,7 @@ section #p-detail {
         width: 60px;
         position: absolute;
         height: 2px;
-        background: #fdc900;
+        background: #da2337;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);

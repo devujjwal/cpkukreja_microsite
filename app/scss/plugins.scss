@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "./variables.scss";
 
 @font-face {
     font-family: ytpregular;
@@ -575,7 +576,7 @@ $etcarousel-opacity-not-active: 0.25 !default;
             }
         }
         &.etcarousel-active button {
-            background: #fdc900;
+            background: $primary-color;
         }
     }
 }
