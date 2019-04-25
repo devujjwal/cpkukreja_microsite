@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
 .hidden-lg {
   display: none; }
 
@@ -481,7 +481,7 @@ section#footer .widget {
     text-align: left;
     padding-bottom: 20px; }
   section#footer .widget p {
-    color: #858585;
+    color: #463a26;
     line-height: 1.25;
     width: 100%;
     max-width: 350px; }
@@ -490,7 +490,7 @@ section#footer .widget {
     section#footer .widget .links li + li {
       padding-top: 20px; }
     section#footer .widget .links a {
-      color: #858585;
+      color: #463a26;
       text-decoration: none;
       cursor: pointer; }
       section#footer .widget .links a:hover {
@@ -500,7 +500,7 @@ section#footer .widget {
     section#footer .widget.social .title, section#footer .widget.social .social-icons {
       text-align: right; }
     section#footer .widget.social span {
-      color: #858585;
+      color: #463a26;
       font-size: 35px;
       margin-right: 20px;
       cursor: pointer; }
@@ -755,13 +755,11 @@ section #p-detail {
           line-height: normal;
           letter-spacing: normal;
           text-align: right;
-          color: #000000;
-          font-family: Montserrat; }
+          color: #000000; }
         #header .navbar .navbar__items.navbar__items--right .Rectangle span.cp-email {
           position: absolute;
           left: 56px;
           top: 30px;
-          font-family: Montserrat;
           font-size: 13px;
           font-weight: normal;
           font-style: normal;
@@ -824,6 +822,58 @@ section #p-detail {
       font-weight: 800;
       line-height: 33px;
       padding: 0 7px; }
+  #header .sliders .contact-us {
+    position: absolute;
+    top: 8%;
+    left: 53%;
+    width: 450px;
+    opacity: 0.8;
+    background-color: #463a26;
+    color: #ffffff;
+    padding: 31px; }
+    #header .sliders .contact-us h2 {
+      font-size: 22px;
+      font-weight: 800;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 10px; }
+    #header .sliders .contact-us .form-elements label {
+      float: left;
+      width: 160px;
+      margin: 12px 0px;
+      font-size: 16px;
+      font-weight: 400; }
+    #header .sliders .contact-us .form-elements input {
+      width: 58%;
+      border-radius: 2px;
+      background-color: #ffffff;
+      margin: 10px 0px;
+      padding: 9px 9px;
+      color: #000000;
+      outline-color: #da2337; }
+    #header .sliders .contact-us .form-elements textarea {
+      width: 58%;
+      background: #ffffff;
+      font-size: 16px;
+      padding: 13px 9px;
+      margin-top: 9px;
+      outline-color: #da2337;
+      border-radius: 2px; }
+    #header .sliders .contact-us .form-elements .form-action {
+      float: right; }
+      #header .sliders .contact-us .form-elements .form-action .submit-btn {
+        text-align: center;
+        border-radius: 18.5px;
+        background-color: #cc8a00;
+        margin-top: 20px;
+        color: #fff;
+        width: 230px;
+        padding: 6px;
+        cursor: pointer; }
 
 #header .header-band {
   padding: 40px 90px;
@@ -856,7 +906,7 @@ section #p-detail {
   #header .header-band .desc {
     font-size: 18px;
     line-height: 1.39;
-    color: #333333;
+    color: #cc8a00;
     padding-left: 20px;
     -webkit-box-flex: 1 1 80%;
     -moz-box-flex: 1 1 80%;
@@ -1151,31 +1201,6 @@ section #p-detail {
         font-style: normal; }
   #header .sliders .slide .slider-img {
     height: 300px; }
-  #header .sliders .slide .slide-desc {
-    top: auto;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    width: 70%;
-    text-align: center;
-    width: 391px;
-    opacity: 0.8;
-    background-color: #463a26; }
-  #header .sliders .slide .form-elements {
-    padding: 10px;
-    color: #ffffff; }
-    #header .sliders .slide .form-elements label {
-      display: block;
-      max-width: 127px;
-      float: left;
-      width: 120px;
-      line-height: 60px; }
-    #header .sliders .slide .form-elements .form-control {
-      background: #ffffff;
-      width: 65%;
-      border-radius: 2px;
-      margin: 11px 0px;
-      padding: 10px 6px; }
   #header .sliders .slide-nav {
     width: 30px;
     height: 30px; }

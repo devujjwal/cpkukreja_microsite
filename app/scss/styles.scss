@@ -1,5 +1,5 @@
 @import "./variables.scss";
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
 
 .hidden-lg{display: none}
 .hidden-xs{display: block}
@@ -891,13 +891,11 @@ section{
                   letter-spacing: normal;
                   text-align: right;
                   color: $black-color;
-                  font-family: Montserrat;
               }
               span.cp-email {
                 position: absolute;
                 left: 56px;
                 top: 30px;
-                font-family: Montserrat;
                 font-size: 13px;
                 font-weight: normal;
                 font-style: normal;
@@ -975,6 +973,68 @@ section{
                 padding: 0 7px;
             }            
         }
+        .contact-us{
+            position: absolute;
+            top: 8%;
+            left: 53%;
+            width: 450px;
+            opacity: 0.8;
+            background-color: $color-variant-6;
+            color: $white-color;  
+            padding: 31px;
+            h2 {
+              font-size: 22px;
+              font-weight: 800;
+              font-style: normal;
+              font-stretch: normal;
+              line-height: normal;
+              letter-spacing: normal;
+              text-align: center;
+              color: #ffffff;
+              margin-bottom: 10px;
+          }
+          .form-elements{
+              label{
+                float: left;
+                width: 160px;
+                margin: 12px 0px;
+                font-size: 16px;
+                font-weight: 400;
+            }
+              input{
+                width: 58%;
+                border-radius: 2px;
+                background-color: $white-color;
+                margin: 10px 0px;
+                padding: 9px 9px;
+                color: $black-color;
+                outline-color: $primary-color;
+            }
+              textarea {
+                width: 58%;
+                background: $white-color;
+                font-size: 16px;
+                padding: 13px 9px;
+                margin-top: 9px;
+                outline-color: $primary-color;
+                border-radius: 2px;
+            }
+            .form-action {
+              float: right;
+              .submit-btn {
+                text-align: center;
+                border-radius: 18.5px;
+                background-color: $color-variant-2;
+                margin-top: 20px;
+                color: $white-color;
+                width: 230px;
+                padding: 6px;
+                transition: 0.3s all;
+                }
+            }
+          }
+          }      
+      }
     } 
     .header-band {
         padding: 40px 90px;
@@ -1445,38 +1505,8 @@ section{
                 .slider-img{
                     height: 300px;
                 }
-                .slide-desc{
-                    top: auto;
-                    bottom: 10%;
-                    left: 50%;
-                    transform: translate(-50%, -10%);
-                    width: 70%;
-                    text-align: center;
-                    width: 391px;
-                    opacity: 0.8;
-                    background-color: #463a26
-
-                  }
-                  .form-elements {
-                    padding: 10px;
-                    color: $white-color;
-                    label {
-                        display: block;
-                        max-width: 127px;
-                        float: left;
-                        width: 120px;
-                        line-height: 60px;
-                    }
-                    .form-control {
-                      background: $white-color;
-                      width: 65%;
-                      border-radius: 2px;
-                      margin: 11px 0px;
-                      padding: 10px 6px;
-                  }
-                }
-            }
-            .slide-nav{
+            }            
+          .slide-nav{
                 width: 30px;
                 height: 30px;
                 i{

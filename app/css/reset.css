@@ -22,7 +22,7 @@ section, header, footer, article, aside, nav, figcaption, figure {
   display: block; }
 
 *, html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
   box-sizing: border-box; }
@@ -44,21 +44,21 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
-  border: 0.1em solid #333333;
+  border: 0.1em solid #cc8a00;
   border-radius: 0.25em; }
 
 ::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.22);
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 ::-moz-placeholder {
   color: rgba(0, 0, 0, 0.22);
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.22);
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 :-moz-placeholder {
   color: rgba(0, 0, 0, 0.22);
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }

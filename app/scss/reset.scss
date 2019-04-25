@@ -5,7 +5,7 @@
 :focus{outline:0}
 button,input,img,a img{border:0}sup{font-size:60%;vertical-align:super}
 section,header,footer,article,aside,nav,figcaption,figure{display:block}
-*, html, body {font-family: 'Roboto', sans-serif;font-size: 16px;font-weight: 400;box-sizing:border-box}
+*, html, body {font-family: 'Montserrat', sans-serif;;font-size: 16px;font-weight: 400;box-sizing:border-box}
 a{text-decoration: none}
 .img-responsive{width: 100%}
 ::-webkit-scrollbar-track {
@@ -27,20 +27,20 @@ a{text-decoration: none}
 
 ::-webkit-input-placeholder {
 	color: $color-variant-1;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;;
 }
 
 ::-moz-placeholder {
 	color: $color-variant-1;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;;
 }
 
 :-ms-input-placeholder {
 	color: $color-variant-1;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;;
 }
 
 :-moz-placeholder {
 	color: $color-variant-1;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;;
 }
