@@ -12,38 +12,18 @@ objMicrosite = {
             $('#toggle-bar').removeClass('eticon-navcancel').addClass('eticon-navmenu');
         }
     },
-    initializeVideoSlider: function() {
-        var len = $('.video-list').length;
-        var width = $('.video-list').outerWidth(true);
-        $('.video-slider').css('width', len*width);
-        $('.video-slider').show();
-    },
-    intializeYoutubePlayer: function(youTubeID) {        
-        $("#video-player").YTPlayer({
-            videoURL: 'https://youtu.be/' + youTubeID,
-            containment: "self",
-            autoplay: true,
-            mute: false,
-            startAt: 0,
-            opacity: 1,
-            showControls: true,
-            showYTLogo:false,
-            optimizeDisplay:true
-        });
-    },
     bindEvents : function() {
         $('.navbar__link-toggle').click(function(){
             objMicrosite.navToggle(); 
-        });
-        $('.play-YTvideo').click(function(){
-            var youTubeID = $(this).attr("data-id");
-            objMicrosite.intializeYoutubePlayer(youTubeID);
         });
         $('.scrollToBottom').click(function(){
             $('html, body').animate({
                 scrollTop: $("#footer").offset().top - 600
             }, 2000);
         });
+    },
+    certificateCarousel: function() {
+        $('.certificate').on('init', function(etcarousel) {$('.certificate').fadeIn(3000);}).etcarousel(objEtcarouselOpts.certCarouselOpts);
     },
     sliderCarousel: function() {
         $('#sliders').on('init', function(etcarousel) {$('#sliders').fadeIn(3000);}).etcarousel(objEtcarouselOpts.sliderCarouselOpts);
@@ -63,6 +43,25 @@ objMicrosite = {
 }
 
 objEtcarouselOpts = {
+    certCarouselOpts: {
+        lazyLoad: 'ondemand',
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        nextArrow: '#cert-left-btn',
+        prevArrow: '#cert-right-btn',
+        responsive: [           
+            {
+            breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }    
+        ]
+    },
     sliderCarouselOpts: {
         lazyLoad: 'ondemand',
         dots: false,
