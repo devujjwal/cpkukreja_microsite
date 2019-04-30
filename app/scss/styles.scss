@@ -148,7 +148,7 @@
               }
               span.cp-email {
                 position: absolute;
-                left: 56px;
+                left: 49px;
                 top: 30px;
                 font-size: 13px;
                 font-weight: normal;
@@ -489,13 +489,14 @@
                       position: relative;
                       &::after {
                         content: '';
-                        width: 60px;
+                        width: 65px;
                         position: absolute;
-                        height: 4px;
-                        left: 0;
+                        height: 25px;
+                        right: 0;
                         padding: 0;
                         background: url(../images/arw.png);
                         background-repeat: no-repeat;
+                        background-position: 1px 3px;
                       }
                   }
                   }
@@ -999,9 +1000,16 @@ section{
           line-height: 2.5;
           letter-spacing: normal;
           color: #000000;
+          position: relative;
+          margin: 10px 0;
+          width: 300px;
+          padding-left: 30px;
           span {
             color: #da2337;
-            margin-right: 10px;
+            margin-top: -4px;
+            position: absolute;
+            font-size: 18px;
+            left: 0;
         }
       }
         }
@@ -1118,6 +1126,9 @@ section{
         color: #ffffff;
         margin-bottom: 25px;
     }
+      ul{
+        float: left;
+        width: 50%;
     li {
       list-style: none;
           a {
@@ -1135,6 +1146,32 @@ section{
           }
         }
     }
+  }
+  }
+  .widget2 {
+    padding: 20px;
+    .contact-with {
+      float: right;
+      h3 {
+        font-size: 18px;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #ffffff;
+        margin-bottom: 25px;
+    }
+    p {
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-top: 10px;
+    }
     .social-media {
       li {
         display: inline;
@@ -1145,15 +1182,6 @@ section{
         font-size: 22px;
     }
     }
-    p {
-      font-size: 12px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: #ffffff;
-      margin-top: 9px;
   }
   }
   }
@@ -1240,6 +1268,18 @@ section{
                 line-height: 1.87;
                 letter-spacing: normal;
                 color: #4a4a4a;
+                &::after {
+                  content: '|';
+                  position: absolute;
+                  margin-left: 7.5px;
+              }
+              &:last-child {
+                &:after{
+                  content: '';
+                  position: absolute;
+                  margin-left: 7.5px;
+                }
+              }
             }
             }
           }

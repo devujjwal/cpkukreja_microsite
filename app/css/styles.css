@@ -132,7 +132,7 @@
           color: #000000; }
         #header .navbar .navbar__items.navbar__items--right .Rectangle span.cp-email {
           position: absolute;
-          left: 56px;
+          left: 49px;
           top: 30px;
           font-size: 13px;
           font-weight: normal;
@@ -431,13 +431,14 @@ section.container {
               position: relative; }
               section.container .wrapper .left-sec .our-work .work-city .city_img .view-more::after, section.container .wrapper .right-sec .our-work .work-city .city_img .view-more::after {
                 content: '';
-                width: 60px;
+                width: 65px;
                 position: absolute;
-                height: 4px;
-                left: 0;
+                height: 25px;
+                right: 0;
                 padding: 0;
                 background: url(../images/arw.png);
-                background-repeat: no-repeat; }
+                background-repeat: no-repeat;
+                background-position: 1px 3px; }
           section.container .wrapper .left-sec .our-work .work-city .city, section.container .wrapper .right-sec .our-work .work-city .city {
             -webkit-box-flex: 1 0 auto;
             -moz-box-flex: 1 0 auto;
@@ -853,10 +854,17 @@ section.container .wrapper .contact-wrapper {
       font-stretch: normal;
       line-height: 2.5;
       letter-spacing: normal;
-      color: #000000; }
+      color: #000000;
+      position: relative;
+      margin: 10px 0;
+      width: 300px;
+      padding-left: 30px; }
       section.container .wrapper .contact-wrapper .contact li span {
         color: #da2337;
-        margin-right: 10px; }
+        margin-top: -4px;
+        position: absolute;
+        font-size: 18px;
+        left: 0; }
 
 section.container .wrapper .request_quote {
   -webkit-box-flex: 1 0 auto;
@@ -954,35 +962,52 @@ section.container .wrapper .widget {
     letter-spacing: normal;
     color: #ffffff;
     margin-bottom: 25px; }
-  section.container .wrapper .widget li {
-    list-style: none; }
-    section.container .wrapper .widget li a {
-      font-size: 16px;
-      font-weight: 400;
+  section.container .wrapper .widget ul {
+    float: left;
+    width: 50%; }
+    section.container .wrapper .widget ul li {
+      list-style: none; }
+      section.container .wrapper .widget ul li a {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.75;
+        letter-spacing: normal;
+        color: #ffffff; }
+        section.container .wrapper .widget ul li a span {
+          color: #da2337;
+          font-size: 14px;
+          margin-right: 6px; }
+
+section.container .wrapper .widget2 {
+  padding: 20px; }
+  section.container .wrapper .widget2 .contact-with {
+    float: right; }
+    section.container .wrapper .widget2 .contact-with h3 {
+      font-size: 18px;
+      font-weight: 700;
       font-style: normal;
       font-stretch: normal;
-      line-height: 1.75;
+      line-height: normal;
       letter-spacing: normal;
-      color: #ffffff; }
-      section.container .wrapper .widget li a span {
-        color: #da2337;
-        font-size: 14px;
-        margin-right: 6px; }
-  section.container .wrapper .widget .social-media li {
-    display: inline; }
-  section.container .wrapper .widget .social-media a {
-    color: #626f82;
-    padding: 0px 11px 0px 0px;
-    font-size: 22px; }
-  section.container .wrapper .widget p {
-    font-size: 12px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #ffffff;
-    margin-top: 9px; }
+      color: #ffffff;
+      margin-bottom: 25px; }
+    section.container .wrapper .widget2 .contact-with p {
+      font-size: 12px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #ffffff;
+      margin-top: 10px; }
+    section.container .wrapper .widget2 .contact-with .social-media li {
+      display: inline; }
+    section.container .wrapper .widget2 .contact-with .social-media a {
+      color: #626f82;
+      padding: 0px 11px 0px 0px;
+      font-size: 22px; }
 
 section .more-link {
   text-align: center; }
@@ -1056,6 +1081,14 @@ section .more-link {
           line-height: 1.87;
           letter-spacing: normal;
           color: #4a4a4a; }
+          .products li .product .p-desc .locality li::after {
+            content: '|';
+            position: absolute;
+            margin-left: 7.5px; }
+          .products li .product .p-desc .locality li:last-child:after {
+            content: '';
+            position: absolute;
+            margin-left: 7.5px; }
 
 section.container .text-center {
   text-align: center; }
