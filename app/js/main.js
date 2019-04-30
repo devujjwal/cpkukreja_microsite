@@ -23,7 +23,7 @@ objMicrosite = {
         });
     },
     certificateCarousel: function() {
-        $('.certificate').on('init', function(etcarousel) {$('.certificate').fadeIn(3000);}).etcarousel(objEtcarouselOpts.certCarouselOpts);
+        $('#certificate').on('init', function(etcarousel) {$('#certificate').fadeIn(3000);}).etcarousel(objEtcarouselOpts.certCarouselOpts);
     },
     sliderCarousel: function() {
         $('#sliders').on('init', function(etcarousel) {$('#sliders').fadeIn(3000);}).etcarousel(objEtcarouselOpts.sliderCarouselOpts);
@@ -106,27 +106,19 @@ objEtcarouselOpts = {
         ]
     },
     testimonialCarouselOpts : {
-        lazyLoad: 'ondemand',
         arrows: false,
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 300,
         autoplay: true,
         autoplaySpeed: 4000,
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 1,
-        responsive: [
-            {
-            breakpoint: 1200,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            },
+        responsive: [           
             {
             breakpoint: 800,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
                     slidesToScroll: 1
                 }
             },
@@ -144,7 +136,7 @@ objEtcarouselOpts = {
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 6,
+        slidesToShow: 5,
         slidesToScroll: 1,
         nextArrow: '#client-next',
         prevArrow: '#client-prev',
