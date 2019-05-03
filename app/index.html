@@ -35,13 +35,17 @@
             <a class="navbar__link scrollToBottom">
                 Contact Us
             </a>
+            <div class="rectangle mobile">
+              <span class="call-icon"><img src="images/call.png" alt="#"/></span>
+              <span class="call"> +91-9810601301</span>
+              <span class="cp-email">cpka@cpkukreja.com</span>
+          </div>
           </nav>
           <nav class="nav__item navbar__items navbar__items--right">
             <!----<a class="btn btn-sm btn-primary-outline scrollToBottom">
               Request a Quote</a>---> 
-              <div class="Rectangle">
-                  <span class="call-icon eticon-contact
-                  "></span>
+              <div class="rectangle desktop">
+                  <span class="call-icon"><img src="images/call.png" alt="#"/></span>
                   <span class="call"> +91-9810601301</span>
                   <span class="cp-email">cpka@cpkukreja.com</span>
               </div>
@@ -63,13 +67,13 @@
                 <h2>Contact Us</h2>
             <div class="form-elements">
                   <label>Name</label>
-                  <input type="text" data-title="Name" data-required="true" data-pattern="name" class="form-control" />
+                  <input type="text" data-title="Name" data-required="true" data-pattern="name" class="form-control" placeholder="Name" />
                   <label>Email Id</label>
-                  <input type="email" data-title="mail" data-required="true" data-pattern="email"class="form-control" />
+                  <input type="email" data-title="mail" data-required="true" data-pattern="email"class="form-control" placeholder="Email ID" />
                   <label>Mobile No.</label>
-                  <input data-title="Mobile Number" data-required="true" data-pattern="mobile" class="form-control" type="text">
+                  <input type="number" data-title="Mobile Number" data-required="true" data-pattern="mobile" class="form-control" placeholder="Mobile No." type="text">
                   <label>Your Message</label>
-                  <textarea data-required="true" class="form-control"></textarea>
+                  <textarea data-required="true" class="form-control" placeholder="Your Message"></textarea>
                   <div class="form-action">
                       <button type="button" class="btn submit-btn">Submit</button>
                   </div>
@@ -140,20 +144,23 @@
     </section>
     <!---------our work--------->
     <!----------Video----------->
-      <section class="our_video">
-            <div class="container text-center">
-                    <div class="cp-corporate">
-                            <h2>Corporate Video</h2>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fd3dxjLEfq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <p>Design intelligentasia discuss Smart Discuss Smart Building practices at the Jaquar design confab in Pune</p>
-                    </div>
-            </div>
+      <section class="container our_video">
+              <div  class="wrapper">
+                <div class="text-center">
+                  <div class="cp-corporate">
+                          <h2>Corporate Video</h2>
+                          <iframe width="100%" height="315" src="https://www.youtube.com/embed/Fd3dxjLEfq8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <p>Design intelligentasia discuss Smart Discuss Smart Building practices at the Jaquar design confab in Pune</p>
+                  </div>
+           </div>
+        </div>
       </section>
     <!----------Video----------->
      <!----------Media Coverage--->
      <section class="container">
                   <div class="media-logo">
-                      <img src="images/media-coverage.png" alt="#"/>
+                      <img class="big-logo" src="images/media-coverage.png" alt="#"/>
+                      <img class="min-logo" src="images/min-logo.png" alt="#"/>
                   </div>
               <div class="wrapper">
                     <div class="media-box">
@@ -162,12 +169,12 @@
                           <a href="#" class="redmore-btn">Read More <span class="eticon-right-arrow"></span></a>
                     </div>
                     <div class="media-box">
-                      <h3>American High<br> Commission, New Delhi</h3>
+                      <h3>American High Commission, New Delhi</h3>
                       <img src="images/media2.jpg" alt="#" />
                       <a href="#" class="redmore-btn">Read More <span class="eticon-right-arrow"></span></a>
                 </div>
                 <div class="media-box">
-                  <h3>Delhi Metro Rail<br> Corporation, New Delhi</h3>
+                  <h3>Delhi Metro Rail Corporation, New Delhi</h3>
                   <img src="images/media3.jpg" alt="#" />
                   <a href="#" class="redmore-btn">Read More <span class="eticon-right-arrow"></span></a>
             </div>
@@ -220,7 +227,7 @@
 <!---------Certifications----->
 <!---------Testimonials------->
           <section class="container cp-testimonials">
-            <h2>Testimonials</h2>
+                <h2>Testimonials</h2>
                           <div class="block-wrapper">
                             <div id="testimonials">
                                 <div class="testimonial">
@@ -267,40 +274,34 @@
           </section>
 <!---------Testimonials------->
 <!-------------Clients-------->
-<section class="container light-bg">
-    <h2 class="title">Our Clients</h2>
-    <div class="block-wrapper">
-        <span class="custom-nav next" id="client-next"><i class="eticon-left-arrow"></i></span>
-        <span class="custom-nav prev" id="client-prev"><i class="eticon-right-arrow"></i></span>
-        <ul id="clients">
-          <li class="client"><div><img data-lazy="images/client-logo-1.jpg"></div></li>
-          <li class="client"><div><img data-lazy="images/client-logo-2.jpg"></div></li>
-          <li class="client"><div><img data-lazy="images/client-logo-3.jpg"></div></li>
-          <li class="client"><div><img data-lazy="images/client-logo-4.jpg"></div></li>
-          <li class="client"><div><img data-lazy="images/client-logo-5.jpg"></div></li>
-          <li class="client"><div><img data-lazy="images/client-logo-1.jpg"></div></li>
-          <li class="client"><div><img data-lazy="images/client-logo-2.jpg"></div></li>
-          <li class="client"><div><img data-lazy="images/client-logo-3.jpg"></div></li>
-        </ul>
-    </div>
-</section>
-
+          <section class="container">
+              <h2 class="title">Our Clients</h2>
+              <div class="block-wrapper">
+                <ul id="clients">
+                    <li class="client"><div class="clinet_img"><img data-lazy="images/client-logo-1.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-2.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-3.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-4.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-5.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-1.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-2.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-3.jpg"></div></li>
+                  </ul>
+              </div>
+          </section>
 <!-------------Clients-------->
 <!-------Conact section------->
         <section class="container light-bg">
-              <div class="wrapper">
-                      <div class="contact-wrapper">
+          <div class="contact-wrapper">
                             <div class="contact">
                                 <h2>Contact</h2>
                                 <p>For any kind of query, contact us with the details below.</p>
                                 <ul>
-                                      <li><span class="eticon-contact"></span>+91-11-26863953-57, +91-11-26865770</li>
-                                      <li><span class="eticon-email"></span>cpka@cpkukreja.com</li>
-                                      <li><span class="eticon-address"></span>D-1, Green Park, Ashirwad Complex, New Delhi - 110016, India</li>
+                                      <li><span><img src="images/phone.png"/></span>+91-11-26863953-57, +91-11-26865770</li>
+                                      <li><span><img src="images/mail-1.png"/></span>cpka@cpkukreja.com</li>
+                                      <li><span><img src="images/address.png"/></span>D-1, Green Park, Ashirwad Complex, New Delhi - 110016, India</li>
                                 </ul>
-                                </ul>
-                            </div>
-                      </div>
+                          </div>
                       <div class="request_quote">
                               <div class="quote">
                                   <h3 class="title">Request a Quote</h3>
@@ -309,15 +310,15 @@
                                       <div class="form-element">
                                               <div class="form-elements query-form">
                                                   <label>FULL NAME</label>
-                                                  <input type="text" class="form-control has-err" data-pattern="name" data-required="true" data-title="Name">
+                                                  <input type="text" class="form-control" data-pattern="name" data-required="true" data-title="Name">
                                               </div>
                                               <div class="form-elements query-form">
                                                   <label>EMAIL</label>
-                                                  <input type="email" class="form-control has-err" data-pattern="email" data-required="true" data-title="Email Address">
+                                                  <input type="email" class="form-control" data-pattern="email" data-required="true" data-title="Email Address">
                                               </div>
                                               <div class="form-elements query-form">
                                                   <label>PHONE NHUMBER</label>
-                                                  <input type="text" class="form-control has-err" data-pattern="mobile" data-required="true" data-title="Mobile Number">
+                                                  <input type="text" class="form-control" data-pattern="mobile" data-required="true" data-title="Mobile Number">
                                               </div>
                                               <div class="form-elements query-form">
                                                   <label>Business Type</label>
@@ -328,7 +329,7 @@
                                                       <option>NOIDA</option>
                                                   </select>
                                               </div>
-                                              <div class="form-elements query-btn">
+                                              <div class="form-elements query-btn form-action">
                                               <button type="button" class="btn submit-btn">Submit</button>
                                               </div>
                                       </div>
@@ -341,7 +342,7 @@
 <!-----------Footer----------->
             <section class="container dark-bg" id="footer">
                     <div  class="wrapper">
-                            <div class="widget left">
+                            <div class="left-sec widget">
                                   <h3>Quick Links</h3>
                                   <ul>
                                       <li><a href="#"><span class="eticon-right-nav"></span>About us</a></li>
@@ -354,10 +355,10 @@
                                     <li><a href="#"><span class="eticon-right-nav"></span>Contact</a></li>
                                 </ul>
                             </div>
-                            <div class="widget2 right">
-                                <div class="contact-with">
+                            <div class="right-sec widget2 ">
+                                <div class="social-media">
                                       <h3>Connect With Us</h3>
-                                      <ul class="social-media">
+                                      <ul>
                                           <li><a href="#" class="eticon-facebook"></a></li>
                                           <li><a href="#" class="eticon-twitter"></a></li>
                                           <li><a href="#" class="eticon-linkedin"></a></li>
@@ -378,7 +379,7 @@
   <script type="text/javascript">
     $( document ).ready(function() {
         objMicrosite.sliderCarousel();      
-        objMicrosite.mediaCarousel();
+        objMicrosite.leadersCarousel();
         objMicrosite.certificateCarousel();
         objMicrosite.testimonialCarousel();
         objMicrosite.clientCarousel();

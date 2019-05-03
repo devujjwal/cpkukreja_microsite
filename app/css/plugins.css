@@ -420,17 +420,17 @@
     position: relative;
     display: inline-block;
     height: 5px;
-    width: 24px;
+    width: 15px;
     margin: 0 5px;
     padding: 0;
     cursor: pointer; }
     .etcarousel-dots li button {
       border: 0;
-      background: #d8d8d8;
+      background: #4a4a4a;
       display: block;
-      height: 5px;
-      width: 24px;
-      border-radius: 3px;
+      height: 15px;
+      width: 15px;
+      border-radius: 50px;
       outline: none;
       line-height: 0px;
       font-size: 0px;

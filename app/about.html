@@ -35,13 +35,17 @@
             <a class="navbar__link scrollToBottom">
                 Contact Us
             </a>
+            <div class="rectangle mobile">
+              <span class="call-icon"><img src="images/call.png" alt="#"/></span>
+              <span class="call"> +91-9810601301</span>
+              <span class="cp-email">cpka@cpkukreja.com</span>
+          </div>
           </nav>
           <nav class="nav__item navbar__items navbar__items--right">
             <!----<a class="btn btn-sm btn-primary-outline scrollToBottom">
               Request a Quote</a>---> 
-              <div class="Rectangle">
-                  <span class="call-icon eticon-contact
-                  "></span>
+              <div class="rectangle desktop">
+                  <span class="call-icon"><img src="images/call.png" alt="#"/></span>
                   <span class="call"> +91-9810601301</span>
                   <span class="cp-email">cpka@cpkukreja.com</span>
               </div>
@@ -60,7 +64,7 @@
     </section>
     <!---------- About Cp Kukreja ---------->
             <section class="container">
-                    <div class="text-center">
+                    <div class="wrapper">
                         <div class="about_cpkukreja">
                                 <h2>About C.P. Kukreja Architects</h2>
                                 <p>redefine architecture and planning in India, CP Kukreja Architects (CPKA) is now one of the most influential architectural practices of the country. With a highly qualified and professional team of architects, urban planners, structural engineers, and surveyors, CPKA is a multi-disciplinary firm known for some of the most iconic buildings across the globe and our commitment to design excellence, innovation, and sustainability.</p>
@@ -71,31 +75,31 @@
             </section>
     <!--------- About Cp Kukreja --------->
     <!----------Leaderships----------->
-                    <section class="leadership">
-                            <div class="container">
+                    <section class="container leadership">
+                            <div class="block-wrapper">
                                 <div class="header_leaderships">
                                         <h2>Leaderships</h2>
                                         <p>CPKA approaches each project as an opportunity to define a symbiotic relationship between architecture, man and nature. The firm’s integrated practice brings together experts in architecture, interiors, engineering, and urban planning to create innovative solutions.</p>
-                                     <div class="wrapper">
-                                            <div class="leadership-container">
-                                                  <img src="images/cpkukreja.png" alt="#"/>  
-                                                  <h4>C.P. Kukreja</h4>
-                                                  <h6>Architect and Town Planner</h6>
-                                            <p>Bachelor of Architecture, Delhi University. Diploma, Town and Regional Planning, University of Melbourne, Australia. Master of Architecture, University of Manitoba, Canada. Fellow, Institute of Town planners(India). Associate, Indian Institute of Architects.</p>
-                                            </div>
-                                            <div class="leadership-container">
-                                                    <img src="images/s.k.nandi.png" alt="#"/>  
-                                                    <h4>S.K. Nandi</h4>
-                                                    <h6>Civil / Structural Engineer</h6>
-                                              <p>B.Engg.(Civil), Calcutta University. Msc. Engg, University of Bradford, UK. FI Struct E, Fellow Institute of Structural Engineers, UK. F.I.A Struct Engineer, Fellow, Indian Association of Structural Engineers. M.A Cons Engineer, Member Association of Consulting Engineers, India.</p>
-                                              </div>
-                                              <div class="leadership-container">
-                                                    <img src="images/dikshu.png" alt="#"/>  
-                                                    <h4>Dikshu C Kukreja</h4>
-                                                    <h6>Bachelor of Architecture (Hons.)</h6>
-                                              <p>Bachelor of Architecture (Hons.) School of Planning & Architecture, New Delhi, 1991 Taliesin Fellowship, U.S.A. 1993 M.Arch. (Urban Design) Harvard University, U.S.A. 1995 Member : Council of Architecture Associate : Indian Institute of Architects Fellow : Taliesin Fellowship USA Founding…</p>
-                                              </div>
-                                    </div>
+                                     <ul class="leader" id="leaders">
+                                        <li class="team">
+                                            <img src="images/cpkukreja.png" alt="#"/>  
+                                            <h4>C.P. Kukreja</h4>
+                                            <h6>Architect and Town Planner</h6>
+                                      <p>Bachelor of Architecture, Delhi University. Diploma, Town and Regional Planning, University of Melbourne, Australia. Master of Architecture, University of Manitoba, Canada. Fellow, Institute of Town planners(India). Associate, Indian Institute of Architects.</p>
+                                      </li>
+                                      <li class="team">
+                                              <img src="images/s.k.nandi.png" alt="#"/>  
+                                              <h4>S.K. Nandi</h4>
+                                              <h6>Civil / Structural Engineer</h6>
+                                        <p>B.Engg.(Civil), Calcutta University. Msc. Engg, University of Bradford, UK. FI Struct E, Fellow Institute of Structural Engineers, UK. F.I.A Struct Engineer, Fellow, Indian Association of Structural Engineers. M.A Cons Engineer, Member Association of Consulting Engineers, India.</p>
+                                        </li>
+                                        <li class="team">
+                                              <img src="images/dikshu.png" alt="#"/>  
+                                              <h4>Dikshu C Kukreja</h4>
+                                              <h6>Bachelor of Architecture (Hons.)</h6>
+                                        <p>Bachelor of Architecture (Hons.) School of Planning & Architecture, New Delhi, 1991 Taliesin Fellowship, U.S.A. 1993 M.Arch. (Urban Design) Harvard University, U.S.A. 1995 Member : Council of Architecture Associate : Indian Institute of Architects Fellow : Taliesin Fellowship USA Founding…</p>
+                                        </li>
+                                </ul>
                                 </div>
                             </div>
                     </section>
@@ -103,7 +107,8 @@
      <!----------Media Coverage--->
      <section class="container">
                   <div class="media-logo">
-                      <img src="images/media-coverage.png" alt="#"/>
+                      <img class="big-logo" src="images/media-coverage.png" alt="#"/>
+                      <img class="min-logo" src="images/min-logo.png" alt="#"/>
                   </div>
               <div class="wrapper">
                     <div class="media-box">
@@ -163,97 +168,101 @@
 </section>
 <!---------Awards & Achivements ------->
 <!-------------Clients-------->
-<section class="container light-bg">
-    <h2 class="title">Our Clients</h2>
-    <div class="block-wrapper">
-        <span class="custom-nav next etcarousel-arrow etcarousel-hidden" id="client-next" style="" aria-disabled="true" tabindex="-1"><i class="eticon-left-arrow"></i></span>
-        <span class="custom-nav prev etcarousel-arrow etcarousel-hidden" id="client-prev" style="" aria-disabled="true" tabindex="-1"><i class="eticon-right-arrow"></i></span>
-        <ul id="clients" class="etcarousel-initialized etcarousel-slider"><div class="etcarousel-list draggable"><div class="etcarousel-track" style="opacity: 1; width: 1182px; transform: translate3d(0px, 0px, 0px);"><div class="etcarousel-slide etcarousel-current etcarousel-active" data-etcarousel-index="0" aria-hidden="false" style="width: 197px;"><div><li class="client" style="width: 100%; display: inline-block;"><div><img class="" src="images/client-logo-1.jpg" style="opacity: 1;"></div></li></div></div><div class="etcarousel-slide etcarousel-active" data-etcarousel-index="1" aria-hidden="false" style="width: 197px;"><div><li class="client" style="width: 100%; display: inline-block;"><div><img class="" src="images/client-logo-2.jpg" style="opacity: 1;"></div></li></div></div><div class="etcarousel-slide etcarousel-active" data-etcarousel-index="2" aria-hidden="false" style="width: 197px;"><div><li class="client" style="width: 100%; display: inline-block;"><div><img class="" src="images/client-logo-3.jpg" style="opacity: 1;"></div></li></div></div><div class="etcarousel-slide etcarousel-active" data-etcarousel-index="3" aria-hidden="false" style="width: 197px;"><div><li class="client" style="width: 100%; display: inline-block;"><div><img class="" src="images/client-logo-4.jpg" style="opacity: 1;"></div></li></div></div><div class="etcarousel-slide etcarousel-active" data-etcarousel-index="4" aria-hidden="false" style="width: 197px;"><div><li class="client" style="width: 100%; display: inline-block;"><div><img class="" src="images/client-logo-1.jpg" style="opacity: 1;"></div></li></div></div></div></div></ul>
-    </div>
-</section>
+          <section class="container">
+              <h2 class="title">Our Clients</h2>
+              <div class="block-wrapper">
+                <ul id="clients">
+                    <li class="client"><div class="clinet_img"><img data-lazy="images/client-logo-1.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-2.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-3.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-4.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-5.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-1.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-2.jpg"></div></li>
+                    <li class="client"><div><img data-lazy="images/client-logo-3.jpg"></div></li>
+                  </ul>
+              </div>
+          </section>
 <!-------------Clients-------->
 <!-------Conact section------->
-        <section class="container light-bg">
-              <div class="wrapper">
-                      <div class="contact-wrapper">
-                            <div class="contact">
-                                <h2>Contact</h2>
-                                <p>For any kind of query, contact us with the details below.</p>
-                                <ul>
-                                      <li><span class="eticon-contact"></span>+91-11-26863953-57, +91-11-26865770</li>
-                                      <li><span class="eticon-email"></span>cpka@cpkukreja.com</li>
-                                      <li><span class="eticon-address"></span>D-1, Green Park, Ashirwad Complex, New Delhi - 110016, India</li>
-                                </ul>
-                                </ul>
-                            </div>
+<section class="container light-bg">
+    <div class="contact-wrapper">
+                      <div class="contact">
+                          <h2>Contact</h2>
+                          <p>For any kind of query, contact us with the details below.</p>
+                        <ul>
+                              <li><span><img src="images/phone.png"/></span>+91-11-26863953-57, +91-11-26865770</li>
+                              <li><span><img src="images/mail-1.png"/></span>cpka@cpkukreja.com</li>
+                              <li><span><img src="images/address.png"/></span>D-1, Green Park, Ashirwad Complex, New Delhi - 110016, India</li>
+                        </ul>
                       </div>
-                      <div class="request_quote">
-                              <div class="quote">
-                                  <h3 class="title">Request a Quote</h3>
-                                  <p>Please complete the details in the fields below and a TRES stylist will be in contact with you to discuss your styling campaign. Thank you.</p>
-                                  <form method="POST">
-                                      <div class="form-element">
-                                              <div class="form-elements query-form">
-                                                  <label>FULL NAME</label>
-                                                  <input type="text" class="form-control has-err" data-pattern="name" data-required="true" data-title="Name">
-                                              </div>
-                                              <div class="form-elements query-form">
-                                                  <label>EMAIL</label>
-                                                  <input type="email" class="form-control has-err" data-pattern="email" data-required="true" data-title="Email Address">
-                                              </div>
-                                              <div class="form-elements query-form">
-                                                  <label>PHONE NHUMBER</label>
-                                                  <input type="text" class="form-control has-err" data-pattern="mobile" data-required="true" data-title="Mobile Number">
-                                              </div>
-                                              <div class="form-elements query-form">
-                                                  <label>Business Type</label>
-                                                  <select>
-                                                      <option>select</option>
-                                                      <option>NOIDA</option>
-                                                      <option>DELHI</option>
-                                                      <option>NOIDA</option>
-                                                  </select>
-                                              </div>
-                                              <div class="form-elements query-btn">
-                                              <button type="button" class="btn submit-btn">Submit</button>
-                                              </div>
-                                      </div>
-                                  </form>
-                              </div>
-                      </div>
-              </div>
-        </section>
-<!-------Conact section------->
-<!-----------Footer----------->
-            <section class="container dark-bg" id="footer">
-                <div  class="wrapper">
-                        <div class="widget left">
-                              <h3>Quick Links</h3>
-                              <ul>
-                                  <li><a href="#"><span class="eticon-right-nav"></span>About us</a></li>
-                                  <li><a href="#"><span class="eticon-right-nav"></span>Our Work</a></li>
-                                  <li><a href="#"><span class="eticon-right-nav"></span>Awards</a></li>
-                              </ul>
-                              <ul>
-                                <li><a href="#"><span class="eticon-right-nav"></span>News</a></li>
-                                <li><a href="#"><span class="eticon-right-nav"></span>Career</a></li>
-                                <li><a href="#"><span class="eticon-right-nav"></span>Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="widget2 right">
-                            <div class="contact-with">
-                                  <h3>Connect With Us</h3>
-                                  <ul class="social-media">
-                                      <li><a href="#" class="eticon-facebook"></a></li>
-                                      <li><a href="#" class="eticon-twitter"></a></li>
-                                      <li><a href="#" class="eticon-linkedin"></a></li>
-                                      <li><a href="#" class="eticon-twitter"></a></li>
-                                  </ul>
-                                  <p>Copyright © 2019. | All Rights Reserved.</p>
-                              </div>
+                <div class="request_quote">
+                        <div class="quote">
+                            <h3 class="title">Request a Quote</h3>
+                            <p>Please complete the details in the fields below and a TRES stylist will be in contact with you to discuss your styling campaign. Thank you.</p>
+                            <form method="POST">
+                                <div class="form-element">
+                                        <div class="form-elements query-form">
+                                            <label>FULL NAME</label>
+                                            <input type="text" class="form-control has-err" data-pattern="name" data-required="true" data-title="Name">
+                                        </div>
+                                        <div class="form-elements query-form">
+                                            <label>EMAIL</label>
+                                            <input type="email" class="form-control has-err" data-pattern="email" data-required="true" data-title="Email Address">
+                                        </div>
+                                        <div class="form-elements query-form">
+                                            <label>PHONE NHUMBER</label>
+                                            <input type="text" class="form-control has-err" data-pattern="mobile" data-required="true" data-title="Mobile Number">
+                                        </div>
+                                        <div class="form-elements query-form">
+                                            <label>Business Type</label>
+                                            <select>
+                                                <option>select</option>
+                                                <option>NOIDA</option>
+                                                <option>DELHI</option>
+                                                <option>NOIDA</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-elements query-btn">
+                                        <button type="button" class="btn submit-btn">Submit</button>
+                                        </div>
+                                </div>
+                            </form>
                         </div>
                 </div>
-            </section>
+        </div>
+  </section>
+<!-------Conact section------->
+<!-----------Footer----------->
+        <section class="container dark-bg" id="footer">
+            <div  class="wrapper">
+                    <div class="left-sec widget">
+                          <h3>Quick Links</h3>
+                          <ul>
+                              <li><a href="#"><span class="eticon-right-nav"></span>About us</a></li>
+                              <li><a href="#"><span class="eticon-right-nav"></span>Our Work</a></li>
+                              <li><a href="#"><span class="eticon-right-nav"></span>Awards</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="#"><span class="eticon-right-nav"></span>News</a></li>
+                            <li><a href="#"><span class="eticon-right-nav"></span>Career</a></li>
+                            <li><a href="#"><span class="eticon-right-nav"></span>Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-sec widget2 ">
+                        <div class="social-media">
+                              <h3>Connect With Us</h3>
+                              <ul>
+                                  <li><a href="#" class="eticon-facebook"></a></li>
+                                  <li><a href="#" class="eticon-twitter"></a></li>
+                                  <li><a href="#" class="eticon-linkedin"></a></li>
+                                  <li><a href="#" class="eticon-twitter"></a></li>
+                              </ul>
+                              <p>Copyright © 2019. | All Rights Reserved.</p>
+                          </div>
+                    </div>
+            </div>
+        </section>
 <!-----------Footer----------->
   <!--build:js js/plugins.min.js -->
     <script src="js/lib/plugins.js"></script>
@@ -262,11 +271,8 @@
     <script src="js/main.js"></script>
   <!-- endbuild -->
   <script type="text/javascript">
-    $( document ).ready(function() {
-        objMicrosite.sliderCarousel();      
-        objMicrosite.mediaCarousel();
-        objMicrosite.certificateCarousel();
-        objMicrosite.testimonialCarousel();
+    $( document ).ready(function() {   
+        objMicrosite.leadersCarousel();
         objMicrosite.clientCarousel();
     })
   </script>
